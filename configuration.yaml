@@ -1,0 +1,42 @@
+default_config:
+
+homeassistant:
+
+sensor:
+  - platform: command_line
+    name: Palmeiras Próximos Jogos
+    command: python3 /config/python_scripts/script.py
+    scan_interval: 86400
+    command_timeout: 30
+    value_template: '1'
+    json_attributes:
+      - campeonato_match_1
+      - mandante_match_1
+      - visitante_match_1
+      - datetime_match_1
+      - mandante_img_match_1
+      - visitante_img_match_1
+      - campeonato_match_2
+      - mandante_match_2
+      - visitante_match_2
+      - datetime_match_2
+      - mandante_img_match_2
+      - visitante_img_match_2
+      - campeonato_match_3
+      - mandante_match_3
+      - visitante_match_3
+      - datetime_match_3
+      - mandante_img_match_3
+      - visitante_img_match_3
+      - campeonato_match_4
+      - mandante_match_4
+      - visitante_match_4
+      - datetime_match_4
+      - mandante_img_match_4
+      - visitante_img_match_4
+      - campeonato_match_5
+      - mandante_match_5
+      - visitante_match_5
+      - datetime_match_5
+      - mandante_img_match_5
+      - visitante_img_match_5
