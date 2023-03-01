@@ -12,8 +12,8 @@ Insira os valores contidos na seção sensor na configuração do seu Homeassist
 
 <br />
 <p align="center">
-  <a href="https://github.com/thiagobucca/bucalarm-iot">
-    <img src="images/screenshots.png" alt="Logo" width="144" height="144">
+  <a href="https://github.com/thiagobucca/homeassistant-futebol">
+    <img src="images/screenshots.png" alt="Logo" width="1150" height="1604">
   </a>
 </p>
 
