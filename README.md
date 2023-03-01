@@ -19,9 +19,9 @@ Insira os valores contidos na seção sensor na configuração do seu Homeassist
 
 ## Dependências
 
-`requests`. 
-`bs4`. 
-`homeassistant`. 
+`requests`    
+`bs4`     
+`homeassistant`     
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
