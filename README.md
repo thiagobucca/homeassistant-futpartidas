@@ -6,7 +6,7 @@ Este script Python usa a biblioteca Requests e BeautifulSoup, fazendo Webscrappi
 
 ## Configuração no Homeassistant
 
-Insira os valores contidos na seção sensor na configuração do seu Homeassistant. Essa configuração cria um sensor que lê o retorno do script Python, mapeando todos os elementos do retorno do array como atributos deste sensor. Deste modo, podemos utilizar as informações no frontend Lovelace, como no exemplo abaixo:
+Insira os valores contidos na seção sensor do arquivo configuration.yaml de exemplo, na chave sensor da configuração do seu Home Assistant. Essa configuração cria um sensor que lê o retorno do script Python, mapeando todos os elementos do retorno do array como atributos deste sensor. Deste modo, podemos utilizar as informações no frontend Lovelace, como no exemplo abaixo:
 
 
 <br />
