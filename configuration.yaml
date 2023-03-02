@@ -4,8 +4,8 @@ homeassistant:
 
 sensor:
   - platform: command_line
-    name: Palmeiras Próximos Jogos
-    command: python3 /config/python_scripts/script.py
+    name: Futpartidas Próximos Jogos
+    command: 'python3 /config/python_scripts/futpartidas.py {{ states(''input_select.futpartidas_equipe'') }}'
     scan_interval: 86400
     command_timeout: 30
     value_template: '1'

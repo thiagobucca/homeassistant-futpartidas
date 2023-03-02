@@ -1,8 +1,18 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import sys
+import unicodedata
 
-url = "https://www.placardefutebol.com.br/time/palmeiras/proximos-jogos"
+if len(sys.argv) < 2:
+    print("Please provide a team name.")
+    sys.exit()
+
+team = sys.argv[1]
+team = team.lower().replace(' ', '-')
+team = unicodedata.normalize('NFKD', team).encode('ASCII', 'ignore').decode('ASCII')
+
+url = f"https://www.placardefutebol.com.br/time/{team}/proximos-jogos"
 page = requests.get(url)
 
 soup = BeautifulSoup(page.content, "html.parser")
@@ -12,18 +22,12 @@ main_div = soup.find(id="main")
 matches = []
 for element in main_div.find_all(class_="match__md_card"):
     match = {}
-    match["campeonato"] = element.find(
-        class_="match__md_card--league").get_text(strip=True)
-    match["mandante"] = element.find(
-        class_="match__md_card--ht-name").get_text(strip=True)
-    match["visitante"] = element.find(
-        class_="match__md_card--at-name").get_text(strip=True)
-    match["mandante_img"] = element.find(
-        class_="match__md_card--ht-logo").img["src"]
-    match["visitante_img"] = element.find(
-        class_="match__md_card--at-logo").img["src"]
-    match["datetime"] = element.find(
-        class_="match__md_card--datetime").get_text(separator=" ", strip=True).replace("\n", "")
+    match["campeonato"] = element.find(class_="match__md_card--league").get_text(strip=True)
+    match["mandante"] = element.find(class_="match__md_card--ht-name").get_text(strip=True)
+    match["visitante"] = element.find(class_="match__md_card--at-name").get_text(strip=True)
+    match["mandante_img"] = element.find(class_="match__md_card--ht-logo").img["src"]
+    match["visitante_img"] = element.find(class_="match__md_card--at-logo").img["src"]
+    match["datetime"] = element.find(class_="match__md_card--datetime").get_text(separator=" ", strip=True).replace("\n", "")
     matches.append(match)
 
 output = {}
@@ -63,4 +67,4 @@ if len(matches) > 4:
     output["mandante_img_match_5"] = matches[4]["mandante_img"]
     output["visitante_img_match_5"] = matches[4]["visitante_img"]
 
-print(json.dumps(output, ensure_ascii=False))
+print(json.dumps(output,ensure_ascii=False))
