@@ -1,0 +1,280 @@
+type: custom:vertical-stack-in-card
+cards:
+  - type: vertical-stack
+    cards:
+      - type: custom:mushroom-template-card
+        primary: >-
+          {{ 
+          state_attr('sensor.futpartidas_proximos_jogos',
+          'campeonato_match_1') }}
+        layout: vertical
+        fill_container: true
+        icon: ''
+      - type: horizontal-stack
+        cards:
+          - type: custom:mushroom-template-card
+            primary: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'mandante_match_1') }}
+            picture: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'mandante_img_match_1') }}
+            layout: vertical
+            fill_container: true
+            icon: ''
+          - type: custom:mushroom-template-card
+            card_mod:
+              style:
+                mushroom-state-info$: |
+                  .primary {
+                    font-size: 13px !important;
+                    white-space: normal;
+                  }
+                .: |
+                  ha-card {
+                    margin-top: 10px;
+                    background: rgba(128,199,149,0.5);
+                  }
+            primary: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'datetime_match_1') }}
+            fill_container: false
+            layout: vertical
+          - type: custom:mushroom-template-card
+            primary: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'visitante_match_1') }}
+            picture: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'visitante_img_match_1') }}
+            layout: vertical
+            multiline_secondary: false
+            fill_container: true
+  - type: custom:mushroom-title-card
+    title: '---'
+    alignment: center
+  - type: vertical-stack
+    cards:
+      - type: custom:mushroom-template-card
+        primary: >-
+          {{ 
+          state_attr('sensor.futpartidas_proximos_jogos',
+          'campeonato_match_2') }}
+        layout: vertical
+        fill_container: true
+        icon: ''
+      - type: horizontal-stack
+        cards:
+          - type: custom:mushroom-template-card
+            primary: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'mandante_match_2') }}
+            picture: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'mandante_img_match_2') }}
+            layout: vertical
+            fill_container: true
+            icon: ''
+          - type: custom:mushroom-template-card
+            card_mod:
+              style:
+                mushroom-state-info$: |
+                  .primary {
+                    font-size: 13px !important;
+                    white-space: normal;
+                  }
+                .: |
+                  ha-card {
+                    margin-top: 10px;
+                    background: rgba(128,199,149,0.5);
+                  }
+            primary: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'datetime_match_2') }}
+            fill_container: false
+            layout: vertical
+          - type: custom:mushroom-template-card
+            primary: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'visitante_match_2') }}
+            picture: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'visitante_img_match_2') }}
+            layout: vertical
+            multiline_secondary: false
+            fill_container: true
+  - type: vertical-stack
+    cards:
+      - type: custom:mushroom-template-card
+        primary: >-
+          {{ 
+          state_attr('sensor.futpartidas_proximos_jogos',
+          'campeonato_match_3') }}
+        layout: vertical
+        fill_container: true
+        icon: ''
+      - type: horizontal-stack
+        cards:
+          - type: custom:mushroom-template-card
+            primary: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'mandante_match_3') }}
+            picture: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'mandante_img_match_3') }}
+            layout: vertical
+            fill_container: true
+            icon: ''
+          - type: custom:mushroom-template-card
+            card_mod:
+              style:
+                mushroom-state-info$: |
+                  .primary {
+                    font-size: 13px !important;
+                    white-space: normal;
+                  }
+                .: |
+                  ha-card {
+                    margin-top: 10px;
+                    background: rgba(128,199,149,0.5);
+                  }
+            primary: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'datetime_match_3') }}
+            fill_container: false
+            layout: vertical
+          - type: custom:mushroom-template-card
+            primary: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'visitante_match_3') }}
+            picture: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'visitante_img_match_3') }}
+            layout: vertical
+            multiline_secondary: false
+            fill_container: true
+  - type: vertical-stack
+    cards:
+      - type: custom:mushroom-template-card
+        primary: >-
+          {{ 
+          state_attr('sensor.futpartidas_proximos_jogos',
+          'campeonato_match_4') }}
+        layout: vertical
+        fill_container: true
+        icon: ''
+      - type: horizontal-stack
+        cards:
+          - type: custom:mushroom-template-card
+            primary: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'mandante_match_4') }}
+            picture: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'mandante_img_match_4') }}
+            layout: vertical
+            fill_container: true
+            icon: ''
+          - type: custom:mushroom-template-card
+            card_mod:
+              style:
+                mushroom-state-info$: |
+                  .primary {
+                    font-size: 13px !important;
+                    white-space: normal;
+                  }
+                .: |
+                  ha-card {
+                    margin-top: 10px;
+                    background: rgba(128,199,149,0.5);
+                  }
+            primary: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'datetime_match_4') }}
+            fill_container: false
+            layout: vertical
+          - type: custom:mushroom-template-card
+            primary: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'visitante_match_4') }}
+            picture: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'visitante_img_match_4') }}
+            layout: vertical
+            multiline_secondary: false
+            fill_container: true
+  - type: vertical-stack
+    cards:
+      - type: custom:mushroom-template-card
+        primary: >-
+          {{ 
+          state_attr('sensor.futpartidas_proximos_jogos',
+          'campeonato_match_5') }}
+        layout: vertical
+        fill_container: true
+        icon: ''
+      - type: horizontal-stack
+        cards:
+          - type: custom:mushroom-template-card
+            primary: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'mandante_match_5') }}
+            picture: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'mandante_img_match_5') }}
+            layout: vertical
+            fill_container: true
+            icon: ''
+          - type: custom:mushroom-template-card
+            card_mod:
+              style:
+                mushroom-state-info$: |
+                  .primary {
+                    font-size: 13px !important;
+                    white-space: normal;
+                  }
+                .: |
+                  ha-card {
+                    margin-top: 10px;
+                    background: rgba(128,199,149,0.5);
+                  }
+            primary: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'datetime_match_5') }}
+            fill_container: false
+            layout: vertical
+          - type: custom:mushroom-template-card
+            primary: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'visitante_match_5') }}
+            picture: >-
+              {{ 
+              state_attr('sensor.futpartidas_proximos_jogos',
+              'visitante_img_match_5') }}
+            layout: vertical
+            multiline_secondary: false
+            fill_container: true
