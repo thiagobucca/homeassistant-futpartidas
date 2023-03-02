@@ -15,7 +15,7 @@ Insira os valores contidos na seção sensor do arquivo configuration.yaml de ex
 <br />
 <p align="center">
   <a href="https://github.com/thiagobucca/homeassistant-futpartidas">
-    <img src="images/screenshots.png" alt="Logo" width="480" height="600">
+    <img src="images/screenshots.png" alt="Logo" width="480" height="650">
   </a>
 </p>
 
