@@ -1,7 +1,7 @@
 
 # homeassistant-futpartidas
 
-Este script Python usa a biblioteca Requests e BeautifulSoup, fazendo Webscrapping no site placardefutebol.com.br para obter informações dos próximos jogos do Palmeiras. Ele salva as informações em um dicionário Python e as printa na console. 
+Este script Python usa a biblioteca Requests e BeautifulSoup, fazendo Webscrapping no site placardefutebol.com.br para obter informações dos próximos jogos do seu time do Coração. Ele salva as informações em um dicionário Python e as printa na console. 
 
 
 ## Configuração no Homeassistant
