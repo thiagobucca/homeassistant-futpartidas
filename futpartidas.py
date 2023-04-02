@@ -20,14 +20,14 @@ soup = BeautifulSoup(page.content, "html.parser")
 main_div = soup.find(id="main")
 
 matches = []
-for element in main_div.find_all(class_="match__md_card"):
+for element in main_div.find_all(class_="match__lg_card"):
     match = {}
-    match["campeonato"] = element.find(class_="match__md_card--league").get_text(strip=True)
-    match["mandante"] = element.find(class_="match__md_card--ht-name").get_text(strip=True)
-    match["visitante"] = element.find(class_="match__md_card--at-name").get_text(strip=True)
-    match["mandante_img"] = element.find(class_="match__md_card--ht-logo").img["src"]
-    match["visitante_img"] = element.find(class_="match__md_card--at-logo").img["src"]
-    match["datetime"] = element.find(class_="match__md_card--datetime").get_text(separator=" ", strip=True).replace("\n", "")
+    match["campeonato"] = element.find(class_="match__lg_card--league").get_text(strip=True)
+    match["mandante"] = element.find(class_="match__lg_card--ht-name").get_text(strip=True)
+    match["visitante"] = element.find(class_="match__lg_card--at-name").get_text(strip=True)
+    match["mandante_img"] = element.find(class_="match__lg_card--ht-logo").img["src"]
+    match["visitante_img"] = element.find(class_="match__lg_card--at-logo").img["src"]
+    match["datetime"] = element.find(class_="match__lg_card--datetime").get_text(separator=" ", strip=True).replace("\n", "")
     matches.append(match)
 
 output = {}
